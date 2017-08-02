@@ -39,6 +39,7 @@ namespace JuliaBlogv1.Controllers
         // GET: Posts/Create
         public ActionResult Create()
         {
+            ViewBag.TinyMceKey = "0a57m85bj4o9qstakq9a32fukb4t1uq41fnlckc6b336reyj";
             return View();
         }
 
