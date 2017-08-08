@@ -25,6 +25,8 @@ namespace JuliaBlogv1.Models
       public bool Published { get; set; }
       public bool Deleted { get; set; }
 
+      public string AuthorId { get; set; }
+
       //public virtual ICollection<Category> Categories { get; set; }
       //public virtual ICollection<Comment> Comments { get; set; }
    }

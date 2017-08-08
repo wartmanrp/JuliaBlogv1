@@ -37,7 +37,7 @@ namespace JuliaBlogv1.Migrations
          var userManager = new UserManager<ApplicationUser>(uStore);
 
          //creates new user
-         if (userManager.FindByEmail("powers.wartman@gmail.com") == null)
+         if (userManager.FindByEmail("julia.i.pelly@gmail.com") == null)
          {
             userManager.Create(new ApplicationUser
             {

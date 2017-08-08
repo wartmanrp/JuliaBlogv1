@@ -15,10 +15,19 @@ namespace JuliaBlogv1.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: Posts
-        public async Task<ActionResult> Index()
+      //public ActionResult Index()
+      //{
+      //    var auth = db.Users.FirstOrDefault(x => x.Posts.Count > 0).Id;
+      //    PostsIndexViewModel model = new PostsIndexViewModel(auth);
+
+      //    return View("Index", model);
+      //}
+
+
+      // GET: Posts
+      public async Task<ActionResult> Index()
         {
-            return View(await db.Posts.ToListAsync());
+            return View(await db.Posts.Where(p => p.Published && !p.Deleted).ToListAsync());
         }
 
         // GET: Posts/Details/5

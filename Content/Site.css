@@ -1,4 +1,15 @@
-﻿body {
+﻿.navbar-toggle {
+    padding: 5px 6px;
+}
+
+
+
+
+
+
+
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
